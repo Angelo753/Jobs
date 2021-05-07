@@ -1,5 +1,6 @@
 package cz.angelo.angeljobs;
 
+import cz.angelo.angeljobs.configurations.Config;
 import org.bukkit.entity.Player;
 
 public class GamePlayer {
@@ -29,6 +30,10 @@ public class GamePlayer {
 		this.level = level;
 	}
 
+	public void addLevel(int level) {
+		this.level += level;
+	}
+
 	public Player getPlayer() {
 		return player;
 	}
@@ -51,6 +56,15 @@ public class GamePlayer {
 
 	public void setExp(double exp) {
 		this.exp = exp;
+	}
+
+	public void addExp(double exp) {
+		if (this.exp >= Config.getConfig().getInt("levels." + this.level + ".exp")){
+			this.addLevel(1);
+			this.player.sendMessage(Main.Color(Config.getConfig().getString("messages.levelup")));
+			return;
+		}
+		this.exp += exp;
 	}
 
 	public double getMexp() {

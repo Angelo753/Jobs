@@ -37,6 +37,9 @@ public class BlockBreak implements Listener {
 					double random = rd.doubles(0.5, 1.00).findFirst().getAsDouble();
 					Main.instance.getEconomy().depositPlayer(player, random);
 				}
+				double exp = rd.doubles(0.5, 1.0).findFirst().getAsDouble();
+				double mexp = Config.getConfig().getDouble("levels." + Main.gplayer.get(player.getUniqueId()).getLevel() + ".mexp");
+				Main.gplayer.get(player.getUniqueId()).addExp(exp + (exp * mexp));
 			}
 
 		}
@@ -51,6 +54,9 @@ public class BlockBreak implements Listener {
 					double random = rd.doubles(0.5, 1.00).findFirst().getAsDouble();
 					Main.instance.getEconomy().depositPlayer(player, random);
 				}
+				double exp = rd.doubles(0.5, 1.0).findFirst().getAsDouble();
+				double mexp = Config.getConfig().getDouble("levels." + Main.gplayer.get(player.getUniqueId()).getLevel() + ".mexp");
+				Main.gplayer.get(player.getUniqueId()).addExp(exp + (exp * mexp));
 			}
 
 		}
@@ -65,6 +71,9 @@ public class BlockBreak implements Listener {
 					double random = rd.doubles(0.5, 1.00).findFirst().getAsDouble();
 					Main.instance.getEconomy().depositPlayer(player, random);
 				}
+				double exp = rd.doubles(0.5, 1.0).findFirst().getAsDouble();
+				double mexp = Config.getConfig().getDouble("levels." + Main.gplayer.get(player.getUniqueId()).getLevel() + ".mexp");
+				Main.gplayer.get(player.getUniqueId()).addExp(exp + (exp * mexp));
 			}
 		}
 		if (Main.gplayer.get(player.getUniqueId()).getJobs() == Jobs.FARMER) {
@@ -78,6 +87,9 @@ public class BlockBreak implements Listener {
 					double random = rd.doubles(0.5, 1.00).findFirst().getAsDouble();
 					Main.instance.getEconomy().depositPlayer(player, random);
 				}
+				double exp = rd.doubles(0.5, 1.0).findFirst().getAsDouble();
+				double mexp = Config.getConfig().getDouble("levels." + Main.gplayer.get(player.getUniqueId()).getLevel() + ".mexp");
+				Main.gplayer.get(player.getUniqueId()).addExp(exp + (exp * mexp));
 			}
 
 		}

@@ -1,8 +1,18 @@
 messages:
+  levelup: '&b&lPráce &8&l» &7Nový level.'
   jobStatus:
     joined: '&b&lV této práci jsi zaměstnaný.'
     clickToJoin: '&b&lLevé tlačítko myši pro připojení do práce.'
   cooldown: '&b&lPráce &8&l» &7Musíš počkat &3&l3s&7, abys mohl získat odměnu za práci.'
+levels:
+  '0':
+    exp: 0
+    mexp: 0.5
+    mmoney: 0.5
+  '1':
+    exp: 1000
+    mexp: 0.75
+    mmoney: 0.75
 gui:
   main:
     title: '              &b● &8&lPráce &b●'
@@ -132,6 +142,7 @@ jobs:
   miner:
     blocks:
       - "STONE"
+      - "END_STONE"
       - "ANDESITE"
       - "GRANITE"
       - "DIORITE"
