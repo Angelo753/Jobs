@@ -1,0 +1,9 @@
+name: AngelJobs
+version: @version@
+main: cz.angelo.angeljobs.Main
+api-version: 1.16
+authors: [ Angelo753 ]
+depend: [Vault]
+commands:
+  prace:
+    aliases: [jobs, job]

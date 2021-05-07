@@ -1,0 +1,159 @@
+messages:
+  jobStatus:
+    joined: '&b&lV této práci jsi zaměstnaný.'
+    clickToJoin: '&b&lLevé tlačítko myši pro připojení do práce.'
+  cooldown: '&b&lPráce &8&l» &7Musíš počkat &3&l3s&7, abys mohl získat odměnu za práci.'
+gui:
+  main:
+    title: '              &b● &8&lPráce &b●'
+    items:
+      miner:
+        material: NETHERITE_PICKAXE
+        slot: 11
+        name: '&3&lHorník'
+        lore:
+          - ''
+          - '{STATUS}'
+          - ''
+      lumberjack:
+        material: DIAMOND_AXE
+        slot: 12
+        name: '&3&lDřevorubec'
+        lore:
+          - ''
+          - '{STATUS}'
+          - ''
+      hunter:
+        material: IRON_SWORD
+        slot: 13
+        name: '&3&lRytíř'
+        lore:
+          - ''
+          - '{STATUS}'
+          - ''
+      digger:
+        material: GOLDEN_SHOVEL
+        slot: 14
+        name: '&3&lKopáč'
+        lore:
+          - ''
+          - '{STATUS}'
+          - ''
+      farmer:
+        material: WOODEN_HOE
+        slot: 15
+        name: '&3&lFarmář'
+        lore:
+          - ''
+          - '{STATUS}'
+          - ''
+jobs:
+  farmer:
+    crops:
+      - "BEETROOTS"
+      - "CARROTS"
+      - "POTATOES"
+      - "WHEAT"
+
+  digger:
+    blocks:
+      - "GRASS_BLOCK"
+      - "DIRT"
+      - "COARSE_DIRT"
+      - "PODZOL"
+      - "CRIMSON_NYLIUM"
+      - "WARPED_NYLIUM"
+      - "SOUL_SAND"
+      - "SOUL_SOIL"
+      - "MYCELIUM"
+      - "WARPED_WART_BLOCK"
+      - "WHITE_CONCRETE_POWDER"
+      - "ORANGE_CONCRETE_POWDER"
+      - "MAGENTA_CONCRETE_POWDER"
+      - "LIGHT_BLUE_CONCRETE_POWDER"
+      - "YELLOW_CONCRETE_POWDER"
+      - "LIME_CONCRETE_POWDER"
+      - "PINK_CONCRETE_POWDER"
+      - "GRAY_CONCRETE_POWDER"
+      - "LIGHT_GRAY_CONCRETE_POWDER"
+      - "CYAN_CONCRETE_POWDER"
+      - "PURPLE_CONCRETE_POWDER"
+      - "BLUE_CONCRETE_POWDER"
+      - "BROWN_CONCRETE_POWDER"
+      - "GREEN_CONCRETE_POWDER"
+      - "RED_CONCRETE_POWDER"
+      - "BLACK_CONCRETE_POWDER"
+      - "GRAVEL"
+  hunter:
+    mobs:
+      - "BLAZE"
+      - "CREEPER"
+      - "ELDER_GUARDIAN"
+      - "ENDERMITE"
+      - "EVOKER"
+      - "GHAST"
+      - "GUARDIAN"
+      - "HOGLIN"
+      - "HUSK"
+      - "MAGMA_CUBE"
+      - "PHANTOM"
+      - "PIGLIN_BRUTE"
+      - "PILLAGER"
+      - "RAVAGER"
+      - "SHULKER"
+      - "SILVERFISH"
+      - "SKELETON"
+      - "SLIME"
+      - "STRAY"
+      - "VEX"
+      - "WITCH"
+      - "WITHER_SKELETON"
+      - "ZOGLIN"
+      - "ZOMBIE"
+      - "ZOMBIE_VILLAGER"
+      - "WITHER"
+      - "ENDER_DRAGON"
+
+  lumberjack:
+    blocks:
+      - "OAK_LOG"
+      - "SPRUCE_LOG"
+      - "BIRCH_LOG"
+      - "JUNGLE_LOG"
+      - "ACACIA_LOG"
+      - "DARK_OAK_LOG"
+      - "STRIPPED_OAK_LOG"
+      - "STRIPPED_SPRUCE_LOG"
+      - "STRIPPED_BIRCH_LOG"
+      - "STRIPPED_JUNGLE_LOG"
+      - "STRIPPED_ACACIA_LOG"
+      - "STRIPPED_DARK_OAK_LOG"
+
+  miner:
+    blocks:
+      - "STONE"
+      - "ANDESITE"
+      - "GRANITE"
+      - "DIORITE"
+      - "SANDSTONE"
+      - "CHISELED_SANDSTONE"
+      - "CUT_SANDSTONE"
+      - "COAL_ORE"
+      - "REDSTONE_ORE"
+      - "IRON_ORE"
+      - "GOLD_ORE"
+      - "LAPIS_ORE"
+      - "DIAMOND_ORE"
+      - "EMERALD_ORE"
+      - "NETHER_QUARTZ_ORE"
+      - "OBSIDIAN"
+      - "COBBLESTONE_WALL"
+      - "COBBLESTONE"
+      - "MOSSY_COBBLESTONE_WALL"
+      - "NETHER_BRICKS"
+      - "NETHER_BRICK_STAIRS"
+      - "NETHER_BRICK_FENCE"
+      - "NETHERRACK"
+      - "PRISMARINE"
+      - "PRISMARINE_BRICKS"
+      - "DARK_PRISMARINE"
